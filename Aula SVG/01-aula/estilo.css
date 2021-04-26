@@ -1,0 +1,32 @@
+#ret {
+    background-color: lightgray;
+    padding: 30px;
+}
+
+#elipse {
+    background-color: lightgreen;
+    padding: 30px;
+}
+
+#css {
+    background-color: lightsalmon;
+    padding: 30px;
+}
+
+svg {
+    border: 1px solid;
+    border-radius: 1%;
+    width: 600px;
+    height: 400px;
+}
+
+.exemplo {
+    x: 10px;
+    y: 50px;
+    width: 500px;
+    height: 300px;
+    fill: midnightblue;
+    stroke: orangered;
+    stroke-width: 10;
+    stroke-linejoin: round;
+}
