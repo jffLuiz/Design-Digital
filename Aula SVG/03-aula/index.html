@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Aula 3 Béziert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Vertical Horizontal</h1>
+        <svg> <!-- m=ponto inicial / h=horizonte / v=vertical / z=fechar o desenho (Z APENAS A VERTICAL E HORIZONTAL)-->
+            <path d="M10 10 H90 V90 H10 Z" />
+        </svg>
+    </div>
+    <div>
+        <h1>Linha</h1>
+        <svg> 
+            <path d="M10 10 H300 V300 H10 Z" fill="chartreuse"/>
+            <path d="M10 10 H300 V300 Z" fill="green"/>
+            <path d="M10 10 L300 300" stroke="white"/>
+        </svg>
+    </div>
+
+    <div>
+        <h1>Curva</h1>
+        <svg> 
+            <path d="M10 300 Q245,0  500,300" stroke="chartreuse" stroke-width="5" fill="none"/>
+            <path d="M10 400 Q10,100 500,400" stroke="chartreuse" stroke-width="5" fill="none"/>
+        </svg>
+    
+    </div>
+    <div>
+        <h1>Viewbox</h1>
+        <svg class="tamanho" viewBox="0 0 600 600"> 
+            <path d="M10 300 Q245,0  500,300" stroke="chartreuse" stroke-width="5" fill="none"/>
+            <path d="M10 400 Q10,100 500,400" stroke="chartreuse" stroke-width="5" fill="none"/>
+        </svg>
+    
+    </div>
+
+    <div>
+        <h1>Balão</h1>
+        <svg> 
+            <path d="M300 350 Q320 440 300,590" stroke="gray" stroke-width="5" stroke-linecap="round" fill="none"/>
+            <polygon points="300,340 330,360 270,360" fill="red" />
+            <ellipse cx="300" cy="200" rx="100" ry="150" fill="red" />
+           
+        </svg>
+    
+    </div>
+</body>
+</html>

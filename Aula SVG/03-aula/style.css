@@ -1,0 +1,12 @@
+svg {
+    border: 1px solid chartreuse;
+    background-color: darkgray;
+    border-radius: 2%;
+    width: 600px;
+    height: 600px;
+}
+
+.tamanho{
+    width: 300px;
+    height: 600px
+}
