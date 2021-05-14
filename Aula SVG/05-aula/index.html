@@ -6,20 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
-        <svg>
-            <circle cx="248" cy="100" r="30" fill="white"></circle> <!-- cabeça-->
-            <rect x="213" y="145" width="70" height="120" fill="white"></rect><!-- tronco-->
-            <path d="M190 190 Q190 160  213 160" fill="none" stroke="white" stroke-linecap="round" stroke-width="30"></path><!-- braço esquerdo curva -->
-            <line x1="190" y1="190" x2="190" y2="260" fill="none" stroke="white" stroke-linecap="round" stroke-width="30"></line><!-- braço esquerdo reta -->
-            <path d="M270 160 Q305 157 305 189" fill="none" stroke="white" stroke-linecap="round" stroke-width="30"></path><!-- braço direito curva -->
-            <line x1="305" y1="189" x2="305" y2="260" fill="none" stroke="white" stroke-linecap="round" stroke-width="30"></line><!-- braço direito reta -->
-            <line x1="228" y1="260" x2="228" y2="380" fill="none" stroke="white" stroke-linecap="round" stroke-width="30"></line><!-- perna esquerdo -->
-            <line x1="268" y1="260" x2="268" y2="380" fill="none" stroke="white" stroke-linecap="round" stroke-width="30"></line><!-- perna direita -->
+        <h1>Texto</h1>
+        <svg viewBox= "0 0 850 200">
+            <text x="0" y="100" fill="#ef615e" font-size="50" font-family="Ewert">O Palmeiras não tem </text>
+            <text x="0" y="150" fill="#ef615e" font-size="50" font-family="Ewert">mundial </text>
+
+            <line x1="0" y1="100" x2="850" y2="100" stroke="black"></line>
+
         </svg>
     </div>
     
+    <div>
+        <h1>texto centralizado</h1>
+        <svg>
+            <text x="50%" y="50%" text-anchor="middle" fill="#ef615e" font-size="50" font-family="Ewert">nem gol </text>
+        </svg>
+    </div>
+
+    <div>
+        <h1>texto com path</h1>
+        <svg>
+            <defs>
+                <path id="testePath" d="M50,160 Q400,-100 750,160" ></path>
+            </defs>
+            <text fill="#ef615e" font-size="25" font-family="Ewert"><textPath xlink:href="#testePath" >Bi Mundial ... Tri Libertadores ... Octa Brasileiro</textPath></text>
+        </svg>
+    </div>
 </body>
 </html>
