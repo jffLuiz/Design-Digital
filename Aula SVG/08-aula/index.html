@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Objeto Unico</h1>
+        <svg>
+            <circle cx="25"cy="25" r="10" fill="red" transform="scale(4)"></circle>
+            <circle cx="100" cy="25" r="10" fill="orange" transform="scale(1,4)"></circle>
+           
+        </svg>
+    </div>
+    <div>
+        <h1>Symbol</h1>
+        <svg>
+            <symbol id="olho">
+            <circle cx="25"cy="25" r="10" fill="red" transform="scale(4)"></circle>
+            <circle cx="100" cy="25" r="10" fill="black" transform="scale(1,4)"></circle>
+            </symbol>
+            
+        </svg>
+    </div>
+
+
+    <div>
+        <h1>usando o Symbol</h1>
+        <svg>
+        <use xlink:href="#olho" transform="translate(-50,-60)"></use>
+        <use xlink:href="#olho" transform="translate(20,-60)"></use>
+        <path d="M30,100 Q100,200 150,100" stroke="black"></path>
+            
+        </svg>
+    </div>
+
+    
+</body>
+</html>
